@@ -1,0 +1,21 @@
+5 - Describa como funciona el programa siguiente:
+
+def fibo(n,a=0,b=1):
+   while n!=0:
+      return fibo(n-1,b,a+b)
+   return a
+
+
+for i in range(0,10):
+   print(fibo(i))
+
+La funcion fibo tiene tres argumentos, "n" que seria un numero que recibe, "a" que tiene un valor inicial 
+igual a cero y "b" que tiene un valor inicial a uno.Luego hay un bucle "while" que llama a la funcion fibo 
+hasta que "n" sea igual a cero pero ahora a la funcion fibo se le  pasa como primer argumento "n-1", como 
+segundo argumento "b" entonces "a" toma el valor de "b" y como tercer argumento "a + b" entoces "b" toma el 
+valor de la suma "a+b".Entonces "n" marca el numero de veces que se veces que se va a llamar a la funcion fibo,
+"a" guarda el numero anterior y "b" la suma del numero anterior mas el actual.Esta funcion permite calcular
+la sucesion de fibonacci.Se utiliza el un bucle "for" con la fucion range() para llamar a la funcion fibo diez 
+veces imprimiendo por pantalla los primero diez numeros de la sucesion de fibonacci (empezando desde cero)
+ 
+
